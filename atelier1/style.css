@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 95%;
+    margin: 20px auto;
+    background-image: url(./bottom.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+   
+}
+h1 {
+    color: hsl(300, 43%, 22%);
+    font-size: 40px;
+    text-align: start;
+}
+.flexbox1{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center; 
+    align-content: center;
+   
+    
+}
+.p{
+    color: hsl(303, 10%, 53%) ;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    padding: 20px;
+    background-image: url(./top.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.para{
+    text-align: start;
+    
+}
+div{
+    padding: 10px;
+}
+.div{
+  
+    width: 520px;
+    display: grid;
+    grid-template-columns: 1fr 10px 1fr;
+    grid-template-areas:
+    "one one .."
+    "..tree tree";
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.tree{
+    grid-area: tree;
+}
+h5{
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+}
+.star{
+    height: 50px;
+    border-radius: 4px;
+    background-color: hsl(300, 24%, 96%);
+    display: grid;
+    grid-template-columns:120px 250px;
+    margin: 5px auto;
+
+}
+.mob{
+  position: relative;
+  bottom: 8px;
+}
+.flexbox2{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center; 
+    align-content: center;
+    
+   
+}
+.bottom{
+    background-color: hsl(300, 43%, 22%);
+    width: 370px;
+    height: 270px;
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 4px;
+    color: hsl(0, 0%, 100%);
+ }
+.img{
+    border-radius: 50%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.ver{
+    color: hsl(333, 80%, 67%);
+    position: relative;
+    left: 38%;
+    bottom: 88px;
+}
+.nom{
+    position: relative;
+    left: 38%;
+    bottom: 90px;
+}
+#irenne{
+    position: relative;
+    top: 20px;
+}
+#anne{
+    position: relative;
+    top: 40px;
+}
+h6{
+    margin: 10px auto;
+    text-align: start;
+    font-size: 15px;
+    position: relative;
+    bottom: 70px;
+}
+@media (max-width:650px){
+    .div{
+        margin-top: 30px;
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+        "one " "two" " tree";
+    }
+   .star{
+       width: 370px;
+       height: 70px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+
+   }
+   body{
+    background-image: url(./bottom-mobile.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 200px;
+   
+}
+   h1{
+       width: 370px;
+       text-align: center;
+       
+   }
+   .para{
+    text-align: center;
+   
+}
+   h5{
+       text-align: center;
+       width: 370px;
+        text-align: center;
+        position: relative;
+        top: 10px;
+
+
+   }
+        
+   img.mob{
+    position: relative;
+    top: 30px;
+}
+.p{
+    text-align: center;
+    position: relative;
+    left: 20px;
+}
+     
+    
+    
+}

@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:   hsl(229, 57%, 11%);
+    background-image: url(./desktop.png);
+    background-repeat: no-repeat;
+    background-position-y: 290px;
+   }
+.cantiner{
+    display: flex;
+}
+.box{
+    background-color:  hsl(228, 56%, 26%);
+    border-radius: 10px 70px 10px 10px;
+    width: 300px;
+    height: 120px;
+    padding: 25px;
+    margin-top: 220px;
+    margin-left:240px;
+}
+.icon{
+    margin:10px auto;
+    margin-right: 10px;
+    padding: 8px;
+    background-color:   hsl(229, 57%, 11%);
+    border-radius: 6px;
+    width: 20px;
+    height: 20px;
+}
+.box2{
+    color: cornsilk;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:  hsl(228, 56%, 26%);
+    border-radius: 10px;
+    width: 500px;
+    height: 100px;
+    padding: 25px;
+    margin-top: 240px;
+    margin-left: 30px;
+}
+.progress{
+    background-color:   hsl(229, 57%, 11%);
+    height: 17px;
+    border-radius: 20px;
+    position: relative;
+    top: 25%;
+}
+.progress-2{
+    background-color: red;
+  background-image:
+    linear-gradient(
+      to right, 
+      hsl(6, 100%, 80%) , hsl(335, 100%, 65%)
+    );
+    height: 13px;
+    width: 70%;
+    border-radius: 20px;
+    position: relative;
+    top: 2px ;
+    left: 2px;
+
+}
+div.progress-2::before{
+    content: '';
+    position: absolute;
+    left: 95.5%;
+    top: 0.5px;
+    background-color: #ffffff;
+    border-style: solid;
+    width:9px;
+    height: 8px;
+    border-radius: 20px;
+}
+.gb{
+    position: relative;
+    top: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.life{
+    background-color:  hsl(243, 100%, 93%);
+    color: black;
+    width: 160px;
+    height: 55px;
+    font-size: 14px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom:105px ;
+    left: 300px; 
+}
+h1{
+   margin-right: 6px;
+}
+.tri{
+    position: relative;
+    bottom: 115px;
+    left: 430px;
+    width: 0;
+    height: 0;
+    border-top: 40px solid hsl(243, 100%, 93%);
+    border-left: 30px solid transparent;
+}
+@media (max-width:800px){
+    .cantiner{
+     background-image: url(./mobile.png);
+     background-size: 100%;
+    background-repeat: no-repeat; 
+    display: flex;
+    flex-direction: column;
+     height: 1000px;
+    margin: 0px;
+  
+    }
+    .icon{
+        margin:30px auto;
+        margin-right: 15px;
+    }
+    .box{
+      
+        margin: auto;
+    }
+    .box2{
+        
+        width: 300px;
+        position: relative;
+        bottom: 270px;
+        margin: auto;
+        position: relative;
+        bottom:  320px;
+        
+    }
+    .tri{
+        display: none;
+    }
+    .life{
+        position: relative;
+        left: 60px;
+        top: 50px;
+    }
+  
+}
